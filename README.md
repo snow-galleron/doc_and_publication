@@ -13,8 +13,8 @@ The data pipeline is structured into the following stages:
 * **Purpose:** Preserve historical data for auditing and retrospective analysis.
 * **Example SQL:**
 ```sql
-SELECT * 
-FROM source_system.odoo_table
+SELECT distinct _PARTITIONDATE
+FROM source_system.odoo_table_history
 WHERE _PARTITIONDATE >= DATE_SUB(CURRENT_DATE(), INTERVAL 90 DAY);
 ```
 * **Example Tables:** `partner_history`, `orderline_history`, `table_from_hubspot_history`
@@ -29,7 +29,7 @@ ___
 * **Example SQL:**
 ```sql
 SELECT * 
-FROM source_system.odoo_table
+FROM source_system.odoo_table_history
 WHERE _PARTITIONDATE = CURRENT_DATE();
 ```
 * **Example Tables:** `odoo.partner`, `orderline`, `table_from_hubspot`
