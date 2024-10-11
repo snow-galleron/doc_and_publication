@@ -1,6 +1,6 @@
-# Data Lineage in Dataform: A 7-Stage Process
+# Data Lineage: A 7-Stage Process
 
-This document details a comprehensive 7-stage data lineage process using Dataform, designed to transform raw data into clean, structured, and readily analyzable information for business use cases.  Each stage builds upon the previous one, progressively refining the data.  We also include an 8th stage for business-specific outputs.
+This document details a comprehensive 7-stage data lineage process, designed to transform raw data into clean, structured, and readily analyzable information for business use cases.  Each stage builds upon the previous one, progressively refining the data.  We also include an 8th stage for business-specific outputs.
 
 ## Data Lineage Stages
 
